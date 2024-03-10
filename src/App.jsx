@@ -1,8 +1,15 @@
+import Description from './components/Description/Description';
+import description from './assets/Description.json';
+
 function App() {
+  const handleClick = () => {
+    alert('I am button');
+  };
   return (
-    <>
-      <h1>Homework 2</h1>
-    </>
+    <div>
+      <Description title={description.title} text={description.text} />
+      <button onClick={handleClick}>Click me!</button>
+    </div>
   );
 }
 
