@@ -1,0 +1,20 @@
+.buttonsContainer {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 40px;
+  margin: 0 auto;
+  width: calc(100vw / 2);
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feedbackBtn {
+  width: 150px;
+  height: 80px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px 3px #ffffff;
+  background-color: #ffe8ba;
+  filter: drop-shadow(3px 5px 2px #ffffff66);
+}
