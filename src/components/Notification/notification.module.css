@@ -1,0 +1,13 @@
+.message {
+  padding-top: 30px;
+  padding-left: 50px;
+  width: calc(100vw / 2);
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow:
+    2px 2px 2px #000000,
+    2px 2px 20px #ff9a27,
+    2px 2px 15px #f51717;
+}
