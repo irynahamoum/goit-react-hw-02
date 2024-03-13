@@ -6,7 +6,8 @@ import Feedback from './components/Feedback/Feedback';
 
 const App = () => {
   const [feedback, setFeedback] = useState({ good: 0, neutral: 0, bad: 0 });
-
+  const total = feedback.good + feedback.neutral + feedback.bad;
+  const positive = total > 0 ? Math.round(((feedback.good + feedback.neutral) / total) * 100) : 0;
   const updateFeedback = (feedbackType) => {
     setFeedback((prevFeedback) => ({
       ...prevFeedback,
@@ -18,7 +19,7 @@ const App = () => {
     <div>
       <Description title={description.title} text={description.text} />
       <Options updateFeedback={updateFeedback} feedback={feedback} />
-      <Feedback feedback={feedback} />
+      <Feedback feedback={feedback} total={total} positive={positive} />
     </div>
   );
 };

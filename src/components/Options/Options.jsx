@@ -9,10 +9,10 @@ const Options = ({ updateFeedback }) => {
         <HiOutlineFaceSmile size={40} color={'#54ed54'} />
       </button>
       <button className={css.feedbackBtn} onClick={() => updateFeedback('neutral')}>
-        <PiSmileyMeh size={40} color={'#fcad03'} />
+        <PiSmileyMeh size={40} color={'#fd9619'} />
       </button>
       <button className={css.feedbackBtn} onClick={() => updateFeedback('bad')}>
-        <PiSmileySad size={40} color={'#f04c32'} />
+        <PiSmileySad size={40} color={'#e83434'} />
       </button>
     </div>
   );
