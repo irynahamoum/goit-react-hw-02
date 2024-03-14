@@ -8,7 +8,6 @@ import Notification from './components/Notification/Notification';
 const App = () => {
   const [feedback, setFeedback] = useState(() => {
     const savedFeedback = JSON.parse(window.localStorage.getItem('saved-feedback'));
-    console.log(savedFeedback);
     const originalFeedback = { good: 0, neutral: 0, bad: 0 };
     return savedFeedback !== null ? savedFeedback : originalFeedback;
   });
